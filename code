@@ -1,0 +1,26 @@
+var fallingobject1 = createSprite(190,17,10,10);
+var fallingobject2 = createSprite(62,36,10,10);
+var fallingobject3 = createSprite(270,12,10,10);
+var fallingobject4 = createSprite(323,48,10,10);
+var fallingobject5 = createSprite(129,0,10,10);
+
+
+function draw() {
+  background("white");
+  fallingobject1.velocityY = + 1;
+  fallingobject2.velocityY = + 1;
+ fallingobject3.velocityY = + 1;
+  fallingobject4.velocityY = + 1;
+  fallingobject5.velocityY = 1;
+  createEdgeSprites();
+  fallingobject1.collide(bottomEdge);
+  fallingobject2.collide(bottomEdge);
+ fallingobject3.collide(bottomEdge);
+  fallingobject4.collide(bottomEdge);
+  fallingobject5.collide(bottomEdge);
+ 
+  
+  
+  drawSprites();
+ 
+  }
